@@ -193,7 +193,7 @@ let questionsList = [
     answer: "🍔 July 4, 1776 🍔"
   }, {
     question: "There were 13 original states. Name three.",
-    answer: "🍔 New Hampshire 🍔 Massachusetts 🍔 Rhode Island 🍔 Connecticut 🍔 New York 🍔 New Jersey 🍔 Pennsylvania 🍔 Delaware 🍔 Maryland 🍔 Virginia 🍔 North Carolina 🍔 South Carolina 🍔 Georgia 🍔"
+    answer: "🍔 New Hampshire 🍔 Massachusetts 🍔 Rhode Island 🍔 Connecticut 🍔 New York 🍔 New Jersey 🍔 Pennsylvania 🍔 Delaware 🍔 Maryland 🍔"
   }, {
     question: "What happened at the Constitutional Convention?",
     answer: "🍔 The Constitution was written. 🍔 The Founding Fathers wrote the Constitution. 🍔"
