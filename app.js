@@ -1,3 +1,114 @@
+let questionBox = document.getElementById('questionBox');
+let questionAnswer = questionBox.getElementsByTagName('p')[0];
+let answerBox = document.getElementById('answerBox');
+let answerAnswer = answerBox.getElementsByTagName('p')[0];
+let randomIndex = -1;
+
+function randomQuestion() {
+    randomIndex = Math.floor(Math.random() * questionsList.length);
+    let randomQuestion = questionsList[randomIndex];
+    questionAnswer.innerText = randomQuestion.question;
+    answerAnswer.innerText = '';
+  }
+
+function showAnswer() {
+  if (randomIndex != -1) {
+    let randomQuestion = questionsList[randomIndex];
+    answerAnswer.innerText = randomQuestion.answer;
+  }
+}
+
+function styleTrump() {
+  let element = document.getElementById("toggle");
+  element.classList.toggle("v1");
+}
+
+function toggleTrump() {
+  let element = document.getElementById("btn-trump");
+  element.classList.toggle("styleToggle");
+}
+
+const audioTrump = document.getElementById("audio-trump");
+function playTrump() {
+    if (audioTrump.paused) {
+        audioTrump.play();
+    }
+    else {
+        audioTrump.pause();
+    }
+};
+
+function Trump() {
+  styleTrump();
+  toggleTrump();
+  playTrump();
+}
+
+function styleExotic() {
+  let element = document.getElementById("toggle");
+  element.classList.toggle("v2");
+}
+
+function toggleExotic() {
+  let element = document.getElementById("btn-exotic");
+  element.classList.toggle("styleToggle");
+}
+
+const audioExotic = document.getElementById("audio-exotic");
+function playExotic() {
+    if (audioExotic.paused) {
+        audioExotic.play();
+    }
+    else {
+        audioExotic.pause();
+    }
+};
+
+function Exotic() {
+  styleExotic();
+  toggleExotic();
+  playExotic();
+}
+
+function styleHogan() {
+  let element = document.getElementById("toggle");
+  element.classList.toggle("v3");
+}
+
+function toggleHogan() {
+  let element = document.getElementById("btn-hogan");
+  element.classList.toggle("styleToggle");
+}
+
+const audioHogan = document.getElementById("audio-hogan");
+function playHogan() {
+    if (audioHogan.paused) {
+        audioHogan.play();
+    }
+    else {
+        audioHogan.pause();
+    }
+};
+
+function Hogan() {
+  styleHogan();
+  toggleHogan();
+  playHogan();
+}
+
+const audioEagle = document.getElementById("audio-eagle");
+function playEagle() {
+
+}
+
+
+function playEagle() {
+  const audio = document.getElementById("audio-eagle");
+  audio.currentTime = 0;
+  audio.play();
+}
+
+
 let questionsList = [
   {
     question: "What is the supreme law of the land?",
@@ -303,114 +414,3 @@ let questionsList = [
     question: "Name two national US holidays.",
     answer: "🍔 New Year’s Day 🍔 Martin Luther King, Jr. Day 🍔 Presidents’ Day 🍔 Memorial Day 🍔 Independence Day 🍔 Labor Day 🍔 Columbus Day 🍔 Veterans Day 🍔 Thanksgiving 🍔 Christmas 🍔"
   }];
-
-let questionBox = document.getElementById('questionBox');
-let questionAnswer = questionBox.getElementsByTagName('p')[0];
-let answerBox = document.getElementById('answerBox');
-let answerAnswer = answerBox.getElementsByTagName('p')[0];
-let randomIndex = -1;
-
-function randomQuestion() {
-    randomIndex = Math.floor(Math.random() * questionsList.length);
-    let randomQuestion = questionsList[randomIndex];
-    questionAnswer.innerText = randomQuestion.question;
-    answerAnswer.innerText = '';
-  }
-
-function showAnswer() {
-  if (randomIndex != -1) {
-    let randomQuestion = questionsList[randomIndex];
-    answerAnswer.innerText = randomQuestion.answer;
-  }
-}
-
-function styleTrump() {
-  let element = document.getElementById("toggle");
-  element.classList.toggle("v1");
-}
-
-function toggleTrump() {
-  let element = document.getElementById("btn-trump");
-  element.classList.toggle("styleToggle");
-}
-
-const audioTrump = document.getElementById("audio-trump");
-function playTrump() {
-    if (audioTrump.paused) {
-        audioTrump.play();
-    }
-    else {
-        audioTrump.pause();
-    }
-};
-
-function Trump() {
-  styleTrump();
-  toggleTrump();
-  playTrump();
-}
-
-function styleExotic() {
-  let element = document.getElementById("toggle");
-  element.classList.toggle("v2");
-}
-
-function toggleExotic() {
-  let element = document.getElementById("btn-exotic");
-  element.classList.toggle("styleToggle");
-}
-
-const audioExotic = document.getElementById("audio-exotic");
-function playExotic() {
-    if (audioExotic.paused) {
-        audioExotic.play();
-    }
-    else {
-        audioExotic.pause();
-    }
-};
-
-function Exotic() {
-  styleExotic();
-  toggleExotic();
-  playExotic();
-}
-
-function styleHogan() {
-  let element = document.getElementById("toggle");
-  element.classList.toggle("v3");
-}
-
-function toggleHogan() {
-  let element = document.getElementById("btn-hogan");
-  element.classList.toggle("styleToggle");
-}
-
-const audioHogan = document.getElementById("audio-hogan");
-function playHogan() {
-    if (audioHogan.paused) {
-        audioHogan.play();
-    }
-    else {
-        audioHogan.pause();
-    }
-};
-
-function Hogan() {
-  styleHogan();
-  toggleHogan();
-  playHogan();
-}
-
-const audioEagle = document.getElementById("audio-eagle");
-function playEagle() {
-
-}
-
-
-function playEagle() {
-  const audio = document.getElementById("audio-eagle");
-  audio.currentTime = 0;
-  audio.play();
-}
-
