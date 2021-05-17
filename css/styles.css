@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Slackey&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400&display=swap");
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0; }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; }
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block; }
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em; }
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+body {
+  background-image: linear-gradient(109.6deg, #3ea1db 11.2%, #5d34ec 100.2%);
+  overflow: hidden; }
+
+h1 {
+  font-family: Slackey, serif;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 2rem;
+  color: white;
+  line-height: 2rem;
+  margin-bottom: 6rem; }
+
+.p-question {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  max-width: 100%;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+  word-wrap: break-word;
+  font-family: Karla, sans-serif;
+  font-weight: 300; }
+
+.p-answer {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  max-width: 100%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+  word-wrap: break-word;
+  font-family: Karla, sans-serif;
+  font-weight: 300; }
+
+.button-flex {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem; }
+
+h2 {
+  margin-top: 8rem;
+  font-family: Slackey, serif;
+  font-size: 1.1rem;
+  text-align: center;
+  color: white; }
+
+.btn-question,
+.btn-answer {
+  width: 150px;
+  height: 50px;
+  margin-left: .4rem;
+  margin-right: .4rem;
+  border: none;
+  border-radius: 3%;
+  font-family: Karla, sans-serif;
+  cursor: pointer; }
+
+.option-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  align-items: center;
+  max-width: 100%;
+  margin-left: 1rem;
+  margin-right: 1rem; }
+
+.Eagle {
+  background-image: url(/images/eagle-american-flag.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 3%;
+  margin-left: .3rem;
+  margin-right: .3rem;
+  cursor: pointer; }
+
+.Trump,
+.Exotic,
+.Hogan {
+  width: 100px;
+  height: 40px;
+  border-radius: 3%;
+  border: none;
+  margin-left: .3rem;
+  margin-right: .3rem;
+  color: white;
+  font-family: Karla, sans-serif;
+  font-weight: 400;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  cursor: pointer; }
+
+.v1 {
+  background-image: url(/images/trump-tank-american-flag.jpg); }
+
+.v2 {
+  background-image: url(/images/joe-exotic-american-flag.jpeg);
+  background-repeat: repeat; }
+
+.v3 {
+  background-image: url(/images/hulk-american-flag.gif);
+  background-repeat: repeat; }
