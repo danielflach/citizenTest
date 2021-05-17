@@ -4,54 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>U.S. Citizenship Test</title>
   </head>
   <body>
+    <div class="logo">
+      <h1 class="center">🇺🇸 SO YOU THINK 🇺🇸<br>YOU'RE A-MURICAN?</h1>
+    </div>
     <div class="content" id="toggle">
-      <h1 class="center">🇺🇸 SO YOU WANNA BE A-MURICAN? 🇺🇸</h1>
-      <div class="center-button" id="questionBox">
-        <p class="p-question"></p>
-        <div class="text-center">
-          <button class="btn-question center" onclick="randomQuestion()">
-            Question
-          </button>
-          <button class="btn-answer center" onclick="showAnswer()">
-            Answer
-          </button>
-        </div>
+      <div class="center-button" >
+        <p class="p-question" id="questionBox">Question</p>
       </div>
-      <div class="center-button" id="answerBox">
+      <div class="button-flex">
+        <button class="btn-question center" onclick="showQuestion()">
+          Question
+        </button>
+        <button class="btn-answer center" onclick="showAnswer()">
+          Answer
+        </button>
+      </div>
+      <div class="center-button" >
         <div class="">
-          <p class="p-answer"></p>
+          <p class="p-answer" id="answerBox">Answer</p>
         </div>
-      </div>
-      <div class="footer-btns">
-        <h2>TIME TO AMERICANIFY YOUR LIFE</h2>
-        <div class="text-center1">
-          <button class="Eagle" onclick="playEagle()"></button>
-          <audio src="./audio/EAGLE_SCREECH.mp3" id="audio-eagle""></audio>
-          <button class="Trump" id="btn-trump" onclick="Trump()">1</button>
-          <audio src="./audio/TEAM_AMERICA.mp3" id="audio-trump"></audio>
-          <button class="Exotic" id="btn-exotic" onclick="Exotic()">2</button>
-          <audio src="./audio/BORN_IN_THE_USA.mp3" id="audio-exotic"></audio>
-          <button class="Hogan" id="btn-hogan" onclick="Hogan()">3</button>
-          <audio src="./audio/REAL_AMERICAN.mp3" id="audio-hogan"></audio>
-          <button class="Eagle"onclick="playEagle()"></button>
-          <audio src="./audio/EAGLE_SCREECH.mp3" id="audio-eagle"></audio>
-        </div>
+      </div>  
+    </div>
+    <h2>TIME TO AMERICANIFY YOUR LIFE</h2>
+    <div class="footer-btns">
+      <div class="option-buttons">
+        <button class="Eagle" onclick="playEagle()"></button>
+        <audio src="./audio/EAGLE_SCREECH.mp3" id="audio-eagle""></audio>
+        <button class="Trump" id="btn-trump" onclick="Trump()">1</button>
+        <audio src="./audio/TEAM_AMERICA.mp3" id="audio-trump"></audio>
+        <button class="Exotic" id="btn-exotic" onclick="Exotic()">2</button>
+        <audio src="./audio/BORN_IN_THE_USA.mp3" id="audio-exotic"></audio>
+        <button class="Hogan" id="btn-hogan" onclick="Hogan()">3</button>
+        <audio src="./audio/REAL_AMERICAN.mp3" id="audio-hogan"></audio>
+        <button class="Eagle"onclick="playEagle()"></button>
+        <audio src="./audio/EAGLE_SCREECH.mp3" id="audio-eagle"></audio>
       </div>
     </div>
     <script src="app.js"></script>
